@@ -29,8 +29,8 @@ Designed for quick weather checks on both desktop and mobile devices.
 🖥 Preview
 Example:
 
-
-
+![alt text](images/StartUp.png)
+![alt text](images/City.png)
 
 🛠 Tech Stack
 

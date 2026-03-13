@@ -8,20 +8,17 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="about-section">
-            <h1>About This Project</h1>
-            <p>
-                This project is a simple weather application that allows users to enter a city name and retrieve the current temperature and weather conditions for that location. 
-                It utilizes a weather API to fetch real-time data and displays it in an easy-to-read format. 
-                The application is built using HTML, CSS, and JavaScript, making it lightweight and responsive for various devices. 
-            </p>
-        </div>
-        <div class="weather-section">
+        <div class="weather-input">
             <h2>Enter a city name to get started.</h2>
             <input id="cityInput" type="text" placeholder="Enter City">
             <button id="weatherButton">Get Weather</button>
-                <p2 id="currentTemperature">Current Temperature:</p2>
-                <p2 id="currentConditions">Current Conditions:</p2>
+        </div>
+        <div class="weather-output">
+            <h3 id="Location">Los Angeles, California</h3>
+                <p2 id="Temperature">Current Temperature: 73°F</p2>
+                <p2 id="Conditions">Conditions: Cloudy <p2 id="Icon">🌤️</p2></p2>
+                <p2 id="Humidity">Humidity: 53%</p2>
+                <p2 id="Wind">Wind: 20mph</p2>
         </div>
     </div>
 </body>

@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/042/193/640/small/ai-generated-overcast-sky-background-free-photo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -7,77 +7,95 @@ body{
     font-family: Arial, sans-serif;
     color: #fff;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.weather-container {
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.weather-container,
+.about-section,
+.weather-section {
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 500px;
 }
 
-.about-section{
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
+.about-section h1,
+.weather-section h2 {
+    margin: 15px;
+    font-size: 32px;
 }
 
-.about-section h1{
-    margin: 10px;
-    font-size: 28px;
-}
-
-.about-section p{
-    margin: 5px 0;
-    font-size: 18px;
-}
-
-.weather-section{
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
+.about-section p,
+.weather-section p {
+    margin: 10px 0;
+    font-size: 20px;
 }
 
 .weather-section input {
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width: 80%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    width: 85%;
 }
 
 .weather-section button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #007BFF;
     color: #fff;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .weather-section button:hover {
     background-color: #0056b3;
 }
 
-.weather-section h2{
-    margin: 10px;
-    font-size: 28px;
-}
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-.weather-section p2{
-    margin: 5px 0;
-    font-size: 18px;
+    .weather-container,
+    .about-section,
+    .weather-section {
+        flex: 0 1 350px;
+        max-width: 400px;
+    }
+
+    .about-section h1,
+    .weather-section h2 {
+        font-size: 36px;
+    }
+
+    .about-section p,
+    .weather-section p {
+        font-size: 20px;
+    }
 }

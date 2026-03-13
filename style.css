@@ -1,28 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/042/193/640/small/ai-generated-overcast-sky-background-free-photo.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
     font-family: Arial, sans-serif;
     color: #fff;
     text-align: center;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/042/193/640/small/ai-generated-overcast-sky-background-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 0;
 }
 
 .main-container {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     width: 95%;
-    max-width: 500px;
-    margin: 20px auto;
+    max-width: 300px;
+    margin: 40px auto;
 }
 
 .weather-container,
@@ -56,6 +67,7 @@ body {
     border-radius: 6px;
     margin-bottom: 12px;
     width: 85%;
+    font-size: 16px;
 }
 
 .weather-section button {
@@ -73,13 +85,15 @@ body {
 }
 
 @media (min-width: 768px) {
+    body {
+        align-items: center;
+    }
+
     .main-container {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
         gap: 30px;
         max-width: 1200px;
-        margin: 0 auto;
     }
 
     .weather-container,

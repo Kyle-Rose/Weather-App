@@ -1,5 +1,9 @@
 body {
-    background-image: linear-gradient(to bottom, #4facfe, #00f2fe);
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/042/193/640/small/ai-generated-overcast-sky-background-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
     color: #fff;
     text-align: center;
